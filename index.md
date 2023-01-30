@@ -20,7 +20,9 @@
 *Fig 3b - screen after changing the password* 
 
 4. Open Terminal on VS code, and type the command below with your course-specific student account. An example of the same command with my account is shown below. 
+
 **$ ssh cs15lwi23asc@ieng6.ucsd.edu**
+
 After this, the password for your course-specific account should be typed in. Figure 4b shows what your screen should look like after that.
 
 ![Image](username_psw.png)
