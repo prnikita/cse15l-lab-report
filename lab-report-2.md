@@ -1,13 +1,13 @@
 **PART 1**
 
-* Code for program
+* Code for program <br>
 
-import java.io.IOException;
-import java.net.URI;
-import java.util.ArrayList;
+import java.io.IOException; <br>
+import java.net.URI; <br>
+import java.util.ArrayList; <br>
 
-class Handler implements URLHandler {
-    ArrayList<String> requests = new ArrayList<String>();
+class Handler implements URLHandler { <br>
+    ArrayList<String> requests = new ArrayList<String>(); <br>
 
     public String handleRequest(URI url) {
         System.out.println("Path: " + url.getPath());
@@ -49,30 +49,30 @@ class StringServer {
 public static void main(String[] args) throws IOException is the first method that is called (during command "java StringServer port"). This method handles requests for /add?s=someString. In this case /add?s=orange
 public String handleRequest(URI url) is the second method that is called. This method starts the server on a port in given in args[0].
 	
-* relevant arguments to the methods: 
+* Relevant arguments to the methods: 
 String [] args in the main method refers to system inputs (built in). In this case, it is the port number.
 URI url refers to the localhost url. 
 
-relevant fields of class:
+* Relevant fields of class:
 Arraylist requests stores the query parameters in the url to concatenate on the page.
 	
-* values in the relevant fields that changed:
+* Values in the relevant fields that changed:
 requests changes from null to {orange}
 	
 ![Image](orange_apple.png)
 
 * Methods in code called: 
-public static void main(String[] args) throws IOException is the first method that is called(during command "java StringServer port"). This method handles requests for /add?s=someString. In this case /add?s=apple
+Public static void main(String[] args) throws IOException is the first method that is called(during command "java StringServer port"). This method handles requests for /add?s=someString. In this case /add?s=apple
 public String handleRequest(URI url) is the second method that is called. This method starts the server on a port in given in args[0].
 	
-* relevant arguments to the methods: 
+* Relevant arguments to the methods: 
 String [] args in the main method refers to system inputs (built in). In this case, it is the port number. 
 URI url refers to the localhost url.
 
-relevant fields of class:
+Relevant fields of class:
 Arraylist requests stores the query parameters in the url to concatenate on the page.
 	
-* values in the relevant fields that changed:
+* Values in the relevant fields that changed:
 requests changes from {orange} to {orange, apple}
 	
 
@@ -104,10 +104,10 @@ Below is the code corresonding to a passed test for the buggy method reverseInPl
 Below are screenshots of the result of running the two tests mentioned above on Junit 
 
 ![Image](failed_test.png)
-failed Junit test for method reverseInPlace
+Failed Junit test for method reverseInPlace
 
 ![Image](passed_test.png)
-passed Junit test for method reverseInPlace
+Passed Junit test for method reverseInPlace
 
 * The bug, as the before-and-after code change required to fix it
 
