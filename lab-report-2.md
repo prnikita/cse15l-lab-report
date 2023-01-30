@@ -1,5 +1,7 @@
 **PART 1**
 
+* Code for program
+
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -26,7 +28,6 @@ class Handler implements URLHandler {
         }
     }
 }
-
 class StringServer {
     public static void main(String[] args) throws IOException {
         if(args.length == 0){
@@ -40,6 +41,41 @@ class StringServer {
     }
 }
 	
+* Below are two screenshots of using /add-message
+
+![Image](orange.png)
+	
+* Methods in code called: 
+public static void main(String[] args) throws IOException is the first method that is called. (during command "java StringServer port")
+public String handleRequest(URI url) is the second method that is called.
+	
+* relevant arguments to the methods 
+String [] args in the main method refers to system inputs (built in)
+URI url refers to the localhost url
+
+relevant fields of class 
+Arraylist requests stores the query paramters in the url to concatenate on the page
+	
+* values in the relevant fields that changed
+requests changes from null to {orange}
+	
+![Image](orange_apple.png)
+
+* Methods in code called: 
+public static void main(String[] args) throws IOException is the first method that is called. (during command "java StringServer port")
+public String handleRequest(URI url) is the second method that is called.
+	
+* relevant arguments to the methods 
+String [] args in the main method refers to system inputs (built in)
+URI url refers to the localhost url
+
+relevant fields of class 
+Arraylist requests stores the query paramters in the url to concatenate on the page
+	
+* values in the relevant fields that changed
+requests changes from {orange} to {orange, apple}
+	
+
 **PART 2**
 
 * A failure-inducing input from the buggy program as a J-unit test
@@ -93,4 +129,9 @@ Method reverseInPlace after the code change:
 
 * The bug was that the program only worked for the first half of the array. For the second half of the array, the program was just switching the elements back to the original place as first half of the array was modified. 
 To fix this, I only looped through the first half of the array. I made a copy of the element at that index and transferred it to the reverse index. Similarly I transferred the element at the reverse index to the current index. 
+	
+
+**PART 3**
+	
+In the past two weeks I learnt how to write java testers (assertEquals method, @test). It is very interesting how the same code can fail during some tests and pass during some tests. Thus it is very important to cover as many possible test cases as possible in order to make sure that there are no/few bugs in your code. 
 
