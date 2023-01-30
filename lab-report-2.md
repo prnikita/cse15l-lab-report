@@ -69,7 +69,7 @@ public String handleRequest(URI url) is the second method that is called. This m
 String [] args in the main method refers to system inputs (built in). In this case, it is the port number. 
 URI url refers to the localhost url.
 
-Relevant fields of class:
+* Relevant fields of class:
 Arraylist requests stores the query parameters in the url to concatenate on the page.
 	
 * Values in the relevant fields that changed:
@@ -88,6 +88,7 @@ Below is the code corresponding to a failed test for the buggy method reverseInP
     ArrayExamples.reverseInPlace(input1); <br>
     assertArrayEquals(new int[]{5,4,3,2,1}, input1); <br>
 	} <br>
+} <br>
   
 * An input into the buggy program that doesn't induce a failure 
 Below is the code corresonding to a passed test for the buggy method reverseInPlace
