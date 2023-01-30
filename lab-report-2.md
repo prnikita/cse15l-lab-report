@@ -81,24 +81,24 @@ requests changes from {orange} to {orange, apple}
 * A failure-inducing input from the buggy program as a J-unit test
 Below is the code corresponding to a failed test for the buggy method reverseInPlace. 
 
-@Test 
-  //test for method reverseInPlace
-	public void testReverseInPlacemoreelem() {
-    int[] input1 = {1,2,3,4,5};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{5,4,3,2,1}, input1);
-	}
+@Test <br>
+  //test for method reverseInPlace <br>
+	public void testReverseInPlacemoreelem() { <br>
+    int[] input1 = {1,2,3,4,5}; <br>
+    ArrayExamples.reverseInPlace(input1); <br>
+    assertArrayEquals(new int[]{5,4,3,2,1}, input1); <br>
+	} <br>
   
 * An input into the buggy program that doesn't induce a failure 
 Below is the code corresonding to a passed test for the buggy method reverseInPlace
 
-@Test 
-  //test for method reverseInPlace
-	public void testReverseInPlace() {
-    int[] input1 = {3};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{3}, input1);
-	}
+@Test <br>
+  //test for method reverseInPlace <br>
+	public void testReverseInPlace() { <br>
+    int[] input1 = {3}; <br>
+    ArrayExamples.reverseInPlace(input1);<br>
+    assertArrayEquals(new int[]{3}, input1);<br>
+	}<br>
   
 * The symptom as the output of running the tests
 Below are screenshots of the result of running the two tests mentioned above on Junit 
@@ -111,21 +111,21 @@ passed Junit test for method reverseInPlace
 
 * The bug, as the before-and-after code change required to fix it
 
-Method reverseInPlace before the code change:
-static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
-    }
+Method reverseInPlace before the code change:<br>
+static void reverseInPlace(int[] arr) {<br>
+    for(int i = 0; i < arr.length; i += 1) {<br>
+      arr[i] = arr[arr.length - i - 1];<br>
+    }<br>
 
-Method reverseInPlace after the code change:
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length/2; i += 1) {
-      int copy; 
-      copy = arr[i]; 
-      arr[i] = arr[arr.length - i - 1];
-      arr[arr.length-i-1] = copy;
-    }
-  }
+Method reverseInPlace after the code change:<br>
+  static void reverseInPlace(int[] arr) {<br>
+    for(int i = 0; i < arr.length/2; i += 1) {<br>
+      int copy; <br>
+      copy = arr[i]; <br>
+      arr[i] = arr[arr.length - i - 1];<br>
+      arr[arr.length-i-1] = copy;<br>
+    }<br>
+  }<br>
 
 * The bug was that the program only worked for the first half of the array. For the second half of the array, the program was just switching the elements back to the original place as first half of the array was modified. 
 To fix this, I only looped through the first half of the array. I made a copy of the element at that index and transferred it to the reverse index. Similarly I transferred the element at the reverse index to the current index. 
