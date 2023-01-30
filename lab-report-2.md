@@ -46,12 +46,12 @@ class StringServer {
 ![Image](orange.png)
 	
 * Methods in code called: 
-public static void main(String[] args) throws IOException is the first method that is called (during command "java StringServer port").
-public String handleRequest(URI url) is the second method that is called.
+public static void main(String[] args) throws IOException is the first method that is called (during command "java StringServer port"). This method handles requests for /add?s=someString. In this case /add?s=orange
+public String handleRequest(URI url) is the second method that is called. This method starts the server on a port in given in args[0].
 	
 * relevant arguments to the methods: 
-String [] args in the main method refers to system inputs (built in).
-URI url refers to the localhost url.
+String [] args in the main method refers to system inputs (built in). In this case, it is the port number.
+URI url refers to the localhost url. 
 
 relevant fields of class:
 Arraylist requests stores the query parameters in the url to concatenate on the page.
@@ -62,11 +62,11 @@ requests changes from null to {orange}
 ![Image](orange_apple.png)
 
 * Methods in code called: 
-public static void main(String[] args) throws IOException is the first method that is called(during command "java StringServer port").
-public String handleRequest(URI url) is the second method that is called.
+public static void main(String[] args) throws IOException is the first method that is called(during command "java StringServer port"). This method handles requests for /add?s=someString. In this case /add?s=apple
+public String handleRequest(URI url) is the second method that is called. This method starts the server on a port in given in args[0].
 	
 * relevant arguments to the methods: 
-String [] args in the main method refers to system inputs (built in).
+String [] args in the main method refers to system inputs (built in). In this case, it is the port number. 
 URI url refers to the localhost url.
 
 relevant fields of class:
