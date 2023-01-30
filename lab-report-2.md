@@ -46,33 +46,33 @@ class StringServer {
 ![Image](orange.png)
 	
 * Methods in code called: 
-public static void main(String[] args) throws IOException is the first method that is called. (during command "java StringServer port")
+public static void main(String[] args) throws IOException is the first method that is called (during command "java StringServer port").
 public String handleRequest(URI url) is the second method that is called.
 	
-* relevant arguments to the methods 
-String [] args in the main method refers to system inputs (built in)
-URI url refers to the localhost url
+* relevant arguments to the methods: 
+String [] args in the main method refers to system inputs (built in).
+URI url refers to the localhost url.
 
-relevant fields of class 
-Arraylist requests stores the query paramters in the url to concatenate on the page
+relevant fields of class:
+Arraylist requests stores the query parameters in the url to concatenate on the page.
 	
-* values in the relevant fields that changed
+* values in the relevant fields that changed:
 requests changes from null to {orange}
 	
 ![Image](orange_apple.png)
 
 * Methods in code called: 
-public static void main(String[] args) throws IOException is the first method that is called. (during command "java StringServer port")
+public static void main(String[] args) throws IOException is the first method that is called(during command "java StringServer port").
 public String handleRequest(URI url) is the second method that is called.
 	
-* relevant arguments to the methods 
-String [] args in the main method refers to system inputs (built in)
-URI url refers to the localhost url
+* relevant arguments to the methods: 
+String [] args in the main method refers to system inputs (built in).
+URI url refers to the localhost url.
 
-relevant fields of class 
-Arraylist requests stores the query paramters in the url to concatenate on the page
+relevant fields of class:
+Arraylist requests stores the query parameters in the url to concatenate on the page.
 	
-* values in the relevant fields that changed
+* values in the relevant fields that changed:
 requests changes from {orange} to {orange, apple}
 	
 
