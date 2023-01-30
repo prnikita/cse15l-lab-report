@@ -1,5 +1,7 @@
 1. Go to the Visual Studio Code website https://code.visualstudio.com/, and follow the instructions to download and install it on your computer. I already had it installed on my computer. Fig 1 shows the version of VS code that I have downloaded. 
 
+![Image](VS_code_download.png)
+*Fig 1 - shows the version of VS code downloaded on my laptop* 
 
 3. Log into your course-specific CSE 15L account at https://sdacs.ucsd.edu/~icc/index.php (Fig 1a). You can log in using either your last name or student id number. Obtain your account name as shown in Fig 2b.
 
