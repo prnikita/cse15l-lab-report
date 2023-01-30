@@ -88,7 +88,6 @@ Below is the code corresponding to a failed test for the buggy method reverseInP
     ArrayExamples.reverseInPlace(input1); <br>
     assertArrayEquals(new int[]{5,4,3,2,1}, input1); <br>
 	} <br>
-} <br>
   
 * An input into the buggy program that doesn't induce a failure 
 Below is the code corresonding to a passed test for the buggy method reverseInPlace
@@ -117,6 +116,7 @@ static void reverseInPlace(int[] arr) {<br>
     for(int i = 0; i < arr.length; i += 1) {<br>
       arr[i] = arr[arr.length - i - 1];<br>
     }<br>
+} <br>
 
 Method reverseInPlace after the code change:<br>
   static void reverseInPlace(int[] arr) {<br>
