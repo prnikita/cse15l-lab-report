@@ -1,3 +1,5 @@
+**PART 1**
+
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
@@ -37,6 +39,7 @@ class StringServer {
         Server.start(port, new Handler());
     }
 }
+	
 **PART 2**
 
 * A failure-inducing input from the buggy program as a J-unit test
@@ -64,10 +67,10 @@ Below is the code corresonding to a passed test for the buggy method reverseInPl
 * The symptom as the output of running the tests
 Below are screenshots of the result of running the two tests mentioned above on Junit 
 
-image1
+![Image](failed_test.png)
 failed Junit test for method reverseInPlace
 
-image2
+![Image](passed_test.png)
 passed Junit test for method reverseInPlace
 
 * The bug, as the before-and-after code change required to fix it
