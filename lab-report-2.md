@@ -43,7 +43,7 @@ class StringServer {
 	
 * Below are two screenshots of using /add-message
 
-![Image](orange.png)
+![Image](Screen Shot 2023-02-13 at 1.40.29 PM.png)
 	
 * Methods in code called: 
 ```public static void main(String[] args) throws IOException``` is the first method that is called (during command ```java StringServer port```). This method handles requests for ```/add?s=someString```. In the case of ```/add?s=orange```
@@ -59,7 +59,7 @@ class StringServer {
 * Values in the relevant fields that changed:
 ```requests``` changes from ```null``` to ```{orange}```
 	
-![Image](orange_apple.png)
+![Image](Screen Shot 2023-02-13 at 1.40.19 PM.png)
 
 * Methods in code called: 
 ```Public static void main(String[] args) throws IOException``` is the first method that is called(during command ```java StringServer port```). This method handles requests for ```/add?s=someString```. In the case of ```/add?s=apple```
