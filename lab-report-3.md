@@ -1,4 +1,4 @@
-** -name **
+-name
 ```
 find written_2/travel_guides/berlitz1 -name "HistoryEgypt.txt"
 written_2/travel_guides/berlitz1/HistoryEgypt.txt
@@ -7,7 +7,7 @@ find written_2/non-fiction/OUP/Castro -name "chA.txt"
 written_2/non-fiction/OUP/Castro/chA.txt
 ```
 
-** -size **
+-size
 ```
 find written_2 -name "*.txt" -size -1M
 written_2/non-fiction/OUP/Berk/ch2.txt
@@ -252,7 +252,7 @@ written_2/non-fiction/OUP/Castro/chY.txt
 written_2/non-fiction/OUP/Castro/chO.txt
 ```
 
-** -iname **
+-iname
 ```
 find written_2/non-fiction/OUP/Castro -iname "cha.txt"
 written_2/non-fiction/OUP/Castro/chA.txt
@@ -261,7 +261,7 @@ find written_2/travel_guides/berlitz1 -iname "historydublin.txt"
 written_2/travel_guides/berlitz1/HistoryDublin.txt
 ```
 
-** "-type" **
+-type
 ```
 find written_2 -type f -name "ch*.txt"
 written_2/non-fiction/OUP/Berk/ch2.txt
