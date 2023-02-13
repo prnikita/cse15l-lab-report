@@ -328,5 +328,5 @@ written_2/travel_guides/berlitz1
 written_2/travel_guides/berlitz2
 ```
 
-Sources 
+Sources <br>
 I used the "man" command on the terminal to find command-line options for the find command. In addition, I used chat gpt to understand how the command-line option works, what it does, and the specific way that it can be used. I typed "man find" on the terminal to get the different command-line options for the find command. On chatgpt, I typed "What does the find -name command do" and then "can you give me some examples of its usage". I followed a similar process for all the commands mentioned above. 
