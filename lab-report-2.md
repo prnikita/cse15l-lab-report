@@ -1,6 +1,6 @@
 PART 1
 
-Code for program 
+Code for program:
 ```
 import java.io.IOException;
 import java.net.URI; 
@@ -104,10 +104,10 @@ public void testReverseInPlace() {
 The symptom as the output of running the tests
 Below are screenshots of the result of running the two tests mentioned above on Junit 
 
-Failed Junit test for method reverseInPlace
+Failed Junit test for method reverseInPlace:
 ![Image](failed_test.png)
 
-Passed Junit test for method reverseInPlace
+Passed Junit test for method reverseInPlace:
 ![Image](passed_test.png)
 
 The bug, as the before-and-after code change required to fix it
