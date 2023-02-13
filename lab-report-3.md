@@ -1,4 +1,4 @@
--name
+-name <br>
 This command is used to search for files with a specified name in a directory. 
 ```
 find written_2/travel_guides/berlitz1 -name "HistoryEgypt.txt"
@@ -8,7 +8,7 @@ find written_2/non-fiction/OUP/Castro -name "chA.txt"
 written_2/non-fiction/OUP/Castro/chA.txt
 ```
 
--size
+-size <br>
 This command is used to search for files of a specified size. You can also search for files that are bigger than or smaller than a specified size. 
 ```
 find written_2 -name "*.txt" -size -1M
@@ -254,7 +254,7 @@ written_2/non-fiction/OUP/Castro/chY.txt
 written_2/non-fiction/OUP/Castro/chO.txt
 ```
 
--iname
+-iname <br>
 This command is used to search for files with a specified name in a case insensitive manner. 
 ```
 find written_2/non-fiction/OUP/Castro -iname "cha.txt"
@@ -264,7 +264,7 @@ find written_2/travel_guides/berlitz1 -iname "historydublin.txt"
 written_2/travel_guides/berlitz1/HistoryDublin.txt
 ```
 
--type
+-type <br>
 This command is used to search for files of a specific type. For example 'f' can be used to search for files, while 'd' can be used to search for directories. 
 ```
 find written_2 -type f -name "ch*.txt"
