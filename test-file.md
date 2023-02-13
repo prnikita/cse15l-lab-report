@@ -1,6 +1,6 @@
-**PART 1**
+PART 1
 
-* Code for program 
+Code for program 
 ```
 import java.io.IOException;
 import java.net.URI;
