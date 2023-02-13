@@ -46,7 +46,7 @@ class StringServer {
 ![Image](orange.png)
 	
 * Methods in code called: 
-```public static void main(String[] args) throws IOException``` is the first method that is called (during command ```java StringServer port```). This method handles requests for ```/add?s=someString```. In this case ```/add?s=orange```
+```public static void main(String[] args) throws IOException``` is the first method that is called (during command ```java StringServer port```). This method handles requests for ```/add?s=someString```. In the case of ```/add?s=orange```
 ```public String handleRequest(URI url)``` is the second method that is called. This method starts the server on a port in given in ```args[0]```.
 	
 * Relevant arguments to the methods: 
@@ -62,7 +62,7 @@ class StringServer {
 ![Image](orange_apple.png)
 
 * Methods in code called: 
-```Public static void main(String[] args) throws IOException``` is the first method that is called(during command ```java StringServer port```). This method handles requests for ```/add?s=someString```. In this case ```/add?s=apple```
+```Public static void main(String[] args) throws IOException``` is the first method that is called(during command ```java StringServer port```). This method handles requests for ```/add?s=someString```. In the case of ```/add?s=apple```
 ```public String handleRequest(URI url)``` is the second method that is called. This method starts the server on a port in given in ```args[0]```.
 	
 * Relevant arguments to the methods: 
@@ -78,7 +78,7 @@ class StringServer {
 
 **PART 2**
 
-* A failure-inducing input from the buggy program as a J-unit test
+* A failure-inducing input from the buggy program as a J-unit test <br>
 Below is the code corresponding to a failed test for the buggy method reverseInPlace. 
 ```
 @Test 
@@ -90,7 +90,7 @@ public void testReverseInPlacemoreelem() {
 } 
 ```
 
-* An input into the buggy program that doesn't induce a failure 
+* An input into the buggy program that doesn't induce a failure <br>
 Below is the code corresonding to a passed test for the buggy method reverseInPlace
 ```
 @Test 
@@ -105,11 +105,11 @@ public void testReverseInPlace() {
 * The symptom as the output of running the tests
 Below are screenshots of the result of running the two tests mentioned above on Junit 
 
-![Image](failed_test.png)
 Failed Junit test for method reverseInPlace
+![Image](failed_test.png)
 
-![Image](passed_test.png)
 Passed Junit test for method reverseInPlace
+![Image](passed_test.png)
 
 * The bug, as the before-and-after code change required to fix it
 
