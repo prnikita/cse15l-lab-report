@@ -75,7 +75,6 @@ Relevant fields of class:
 Values in the relevant fields that changed:
 ```requests``` changes from ```{orange}``` to ```{orange, apple}```.
 	
-
 PART 2
 
 A failure-inducing input from the buggy program as a J-unit test <br>
