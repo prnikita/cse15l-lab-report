@@ -78,7 +78,7 @@ Values in the relevant fields that changed:
 PART 2
 
 A failure-inducing input from the buggy program as a J-unit test <br>
-Below is the code corresponding to a failed test for the buggy method reverseInPlace. 
+Below is the code corresponding to a failed test for the buggy method reverseInPlace: 
 ```
 @Test 
 //test for method reverseInPlace 
@@ -90,7 +90,7 @@ public void testReverseInPlacemoreelem() {
 ```
 
 An input into the buggy program that doesn't induce a failure <br>
-Below is the code corresonding to a passed test for the buggy method reverseInPlace
+Below is the code corresonding to a passed test for the buggy method reverseInPlace:
 ```
 @Test 
 //test for method reverseInPlace
