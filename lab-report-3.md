@@ -1,5 +1,5 @@
 -name <br>
-This command is used to search for files with a specified name in a directory. 
+This command is used to search for files with a specified name in a directory. It might be useful when you know the name of a file, but have no idea where it is stored on your computer. It can also be used as a fast way to access a file and the file path. 
 ```
 find written_2/travel_guides/berlitz1 -name "HistoryEgypt.txt"
 written_2/travel_guides/berlitz1/HistoryEgypt.txt
@@ -9,9 +9,10 @@ written_2/non-fiction/OUP/Castro/chA.txt
 ```
 
 -size <br>
-This command is used to search for files of a specified size. You can also search for files that are bigger than or smaller than a specified size. 
+This command is used to search for files of a specified size. You can also search for files that are bigger than or smaller than a specified size. In case, for example, you wanna eradicate all files in a directory that are too big, "find -size" can be used to access all of those files. Note that in the first example below, the head command has been used to only display the first ten lines of the output. 
 ```
-find written_2 -name "*.txt" -size -1M
+find written_2 -name "*.txt" -size -1M > find_size.txt
+head -n 10 find_size.txt
 written_2/non-fiction/OUP/Berk/ch2.txt
 written_2/non-fiction/OUP/Berk/ch1.txt
 written_2/non-fiction/OUP/Berk/CH4.txt
@@ -22,220 +23,6 @@ written_2/non-fiction/OUP/Abernathy/ch1.txt
 written_2/non-fiction/OUP/Abernathy/ch7.txt
 written_2/non-fiction/OUP/Abernathy/ch6.txt
 written_2/non-fiction/OUP/Abernathy/ch8.txt
-written_2/non-fiction/OUP/Abernathy/ch9.txt
-written_2/non-fiction/OUP/Abernathy/ch15.txt
-written_2/non-fiction/OUP/Abernathy/ch14.txt
-written_2/non-fiction/OUP/Rybczynski/ch2.txt
-written_2/non-fiction/OUP/Rybczynski/ch3.txt
-written_2/non-fiction/OUP/Rybczynski/ch1.txt
-written_2/non-fiction/OUP/Kauffman/ch3.txt
-written_2/non-fiction/OUP/Kauffman/ch1.txt
-written_2/non-fiction/OUP/Kauffman/ch4.txt
-written_2/non-fiction/OUP/Kauffman/ch5.txt
-written_2/non-fiction/OUP/Kauffman/ch7.txt
-written_2/non-fiction/OUP/Kauffman/ch6.txt
-written_2/non-fiction/OUP/Kauffman/ch8.txt
-written_2/non-fiction/OUP/Kauffman/ch9.txt
-written_2/non-fiction/OUP/Kauffman/ch10.txt
-written_2/non-fiction/OUP/Fletcher/ch2.txt
-written_2/non-fiction/OUP/Fletcher/ch1.txt
-written_2/non-fiction/OUP/Fletcher/ch5.txt
-written_2/non-fiction/OUP/Fletcher/ch6.txt
-written_2/non-fiction/OUP/Fletcher/ch9.txt
-written_2/non-fiction/OUP/Fletcher/ch10.txt
-written_2/non-fiction/OUP/Castro/chR.txt
-written_2/non-fiction/OUP/Castro/chP.txt
-written_2/non-fiction/OUP/Castro/chQ.txt
-written_2/non-fiction/OUP/Castro/chB.txt
-written_2/non-fiction/OUP/Castro/chC.txt
-written_2/non-fiction/OUP/Castro/chA.txt
-written_2/non-fiction/OUP/Castro/chV.txt
-written_2/non-fiction/OUP/Castro/chW.txt
-written_2/non-fiction/OUP/Castro/chM.txt
-written_2/non-fiction/OUP/Castro/chZ.txt
-written_2/non-fiction/OUP/Castro/chL.txt
-written_2/non-fiction/OUP/Castro/chN.txt
-written_2/non-fiction/OUP/Castro/chY.txt
-written_2/non-fiction/OUP/Castro/chO.txt
-written_2/travel_guides/berlitz1/HandRLasVegas.txt
-written_2/travel_guides/berlitz1/HistoryJapan.txt
-written_2/travel_guides/berlitz1/IntroMalaysia.txt
-written_2/travel_guides/berlitz1/HandRIstanbul.txt
-written_2/travel_guides/berlitz1/HistoryJamaica.txt
-written_2/travel_guides/berlitz1/HandRJamaica.txt
-written_2/travel_guides/berlitz1/HandRHongKong.txt
-written_2/travel_guides/berlitz1/HistoryEgypt.txt
-written_2/travel_guides/berlitz1/IntroEdinburgh.txt
-written_2/travel_guides/berlitz1/HistoryIsrael.txt
-written_2/travel_guides/berlitz1/IntroDublin.txt
-written_2/travel_guides/berlitz1/HistoryIndia.txt
-written_2/travel_guides/berlitz1/IntroFrance.txt
-written_2/travel_guides/berlitz1/IntroMadeira.txt
-written_2/travel_guides/berlitz1/WhatToLakeDistrict.txt
-written_2/travel_guides/berlitz1/IntroIbiza.txt
-written_2/travel_guides/berlitz1/HistoryItaly.txt
-written_2/travel_guides/berlitz1/WhereToGreek.txt
-written_2/travel_guides/berlitz1/WhereToLakeDistrict.txt
-written_2/travel_guides/berlitz1/HistoryDublin.txt
-written_2/travel_guides/berlitz1/IntroIsrael.txt
-written_2/travel_guides/berlitz1/WhatToIbiza.txt
-written_2/travel_guides/berlitz1/HistoryFrance.txt
-written_2/travel_guides/berlitz1/WhatToHawaii.txt
-written_2/travel_guides/berlitz1/HistoryMallorca.txt
-written_2/travel_guides/berlitz1/HistoryJerusalem.txt
-written_2/travel_guides/berlitz1/HandRLisbon.txt
-written_2/travel_guides/berlitz1/WhereToIndia.txt
-written_2/travel_guides/berlitz1/HistoryMadrid.txt
-written_2/travel_guides/berlitz1/HistoryHongKong.txt
-written_2/travel_guides/berlitz1/IntroMadrid.txt
-written_2/travel_guides/berlitz1/IntroLosAngeles.txt
-written_2/travel_guides/berlitz1/HistoryIstanbul.txt
-written_2/travel_guides/berlitz1/WhereToItaly.txt
-written_2/travel_guides/berlitz1/HistoryLasVegas.txt
-written_2/travel_guides/berlitz1/HistoryGreek.txt
-written_2/travel_guides/berlitz1/HandRMallorca.txt
-written_2/travel_guides/berlitz1/JungleMalaysia.txt
-written_2/travel_guides/berlitz1/WhatToMadeira.txt
-written_2/travel_guides/berlitz1/WhatToFWI.txt
-written_2/travel_guides/berlitz1/WhereToMalaysia.txt
-written_2/travel_guides/berlitz1/WhatToMalaysia.txt
-written_2/travel_guides/berlitz1/WhatToDublin.txt
-written_2/travel_guides/berlitz1/WhereToJapan.txt
-written_2/travel_guides/berlitz1/HistoryHawaii.txt
-written_2/travel_guides/berlitz1/WhatToFrance.txt
-written_2/travel_guides/berlitz1/WhereToEgypt.txt
-written_2/travel_guides/berlitz1/WhereToEdinburgh.txt
-written_2/travel_guides/berlitz1/WhatToIsrael.txt
-written_2/travel_guides/berlitz1/HandRLosAngeles.txt
-written_2/travel_guides/berlitz1/HistoryMadeira.txt
-written_2/travel_guides/berlitz1/IntroJerusalem.txt
-written_2/travel_guides/berlitz1/HandRMadeira.txt
-written_2/travel_guides/berlitz1/WhereToIsrael.txt
-written_2/travel_guides/berlitz1/HandRIbiza.txt
-written_2/travel_guides/berlitz1/WhereToFrance.txt
-written_2/travel_guides/berlitz1/WhereToDublin.txt
-written_2/travel_guides/berlitz1/IntroLasVegas.txt
-written_2/travel_guides/berlitz1/IntroIstanbul.txt
-written_2/travel_guides/berlitz1/WhereToMallorca.txt
-written_2/travel_guides/berlitz1/WhatToMallorca.txt
-written_2/travel_guides/berlitz1/IntroHongKong.txt
-written_2/travel_guides/berlitz1/IntroFWI.txt
-written_2/travel_guides/berlitz1/IntroJamaica.txt
-written_2/travel_guides/berlitz1/IntroGreek.txt
-written_2/travel_guides/berlitz1/HandRIsrael.txt
-written_2/travel_guides/berlitz1/WhatToEdinburgh.txt
-written_2/travel_guides/berlitz1/WhereToMadeira.txt
-written_2/travel_guides/berlitz1/WhatToGreek.txt
-written_2/travel_guides/berlitz1/HandRLakeDistrict.txt
-written_2/travel_guides/berlitz1/WhereToIbiza.txt
-written_2/travel_guides/berlitz1/WhereToHawaii.txt
-written_2/travel_guides/berlitz1/HandRMadrid.txt
-written_2/travel_guides/berlitz1/HistoryMalaysia.txt
-written_2/travel_guides/berlitz1/IntroItaly.txt
-written_2/travel_guides/berlitz1/WhatToIndia.txt
-written_2/travel_guides/berlitz1/WhereToLosAngeles.txt
-written_2/travel_guides/berlitz1/HandRJerusalem.txt
-written_2/travel_guides/berlitz1/HistoryIbiza.txt
-written_2/travel_guides/berlitz1/HistoryEdinburgh.txt
-written_2/travel_guides/berlitz1/HistoryFWI.txt
-written_2/travel_guides/berlitz1/IntroIndia.txt
-written_2/travel_guides/berlitz1/WhatToItaly.txt
-written_2/travel_guides/berlitz1/HistoryLakeDistrict.txt
-written_2/travel_guides/berlitz1/WhereToMadrid.txt
-written_2/travel_guides/berlitz1/WhereToJerusalem.txt
-written_2/travel_guides/berlitz1/IntroEgypt.txt
-written_2/travel_guides/berlitz1/HandRHawaii.txt
-written_2/travel_guides/berlitz1/WhatToJapan.txt
-written_2/travel_guides/berlitz1/WhatToJamaica.txt
-written_2/travel_guides/berlitz1/IntroLakeDistrict.txt
-written_2/travel_guides/berlitz1/IntroMallorca.txt
-written_2/travel_guides/berlitz1/WhatToHongKong.txt
-written_2/travel_guides/berlitz1/WhatToEgypt.txt
-written_2/travel_guides/berlitz1/WhereToHongKong.txt
-written_2/travel_guides/berlitz1/WhereToFWI.txt
-written_2/travel_guides/berlitz1/WhatToIstanbul.txt
-written_2/travel_guides/berlitz1/WhereToIstanbul.txt
-written_2/travel_guides/berlitz1/IntroJapan.txt
-written_2/travel_guides/berlitz1/WhatToLasVegas.txt
-written_2/travel_guides/berlitz1/WhatToLosAngeles.txt
-written_2/travel_guides/berlitz2/Portugal-History.txt
-written_2/travel_guides/berlitz2/Berlin-WhereToGo.txt
-written_2/travel_guides/berlitz2/Costa-History.txt
-written_2/travel_guides/berlitz2/Amsterdam-WhereToGo.txt
-written_2/travel_guides/berlitz2/Costa-WhereToGo.txt
-written_2/travel_guides/berlitz2/Amsterdam-WhatToDo.txt
-written_2/travel_guides/berlitz2/CostaBlanca-WhatToDo.txt
-written_2/travel_guides/berlitz2/Barcelona-History.txt
-written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt
-written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
-written_2/travel_guides/berlitz2/Poland-WhatToDo.txt
-written_2/travel_guides/berlitz2/California-WhereToGo.txt
-written_2/travel_guides/berlitz2/Cuba-WhatToDo.txt
-written_2/travel_guides/berlitz2/Berlin-History.txt
-written_2/travel_guides/berlitz2/Bahamas-WhereToGo.txt
-written_2/travel_guides/berlitz2/Cancun-WhatToDo.txt
-written_2/travel_guides/berlitz2/Bali-History.txt
-written_2/travel_guides/berlitz2/Crete-WhereToGo.txt
-written_2/travel_guides/berlitz2/Athens-History.txt
-written_2/travel_guides/berlitz2/Berlin-WhatToDo.txt
-written_2/travel_guides/berlitz2/Canada-WhereToGo.txt
-written_2/travel_guides/berlitz2/Bali-WhereToGo.txt
-written_2/travel_guides/berlitz2/Budapest-WhereoGo.txt
-written_2/travel_guides/berlitz2/Barcelona-WhereToGo.txt
-written_2/travel_guides/berlitz2/Athens-WhereToGo.txt
-written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
-written_2/travel_guides/berlitz2/China-WhereToGo.txt
-written_2/travel_guides/berlitz2/Bermuda-WhatToDo.txt
-written_2/travel_guides/berlitz2/California-History.txt
-written_2/travel_guides/berlitz2/Vallarta-History.txt
-written_2/travel_guides/berlitz2/Budapest-WhatToDo.txt
-written_2/travel_guides/berlitz2/Cancun-History.txt
-written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt
-written_2/travel_guides/berlitz2/Vallarta-WhatToDo.txt
-written_2/travel_guides/berlitz2/Bali-WhatToDo.txt
-written_2/travel_guides/berlitz2/CostaBlanca-History.txt
-written_2/travel_guides/berlitz2/CstaBlanca-WhereToGo.txt
-written_2/travel_guides/berlitz2/NewOrleans-History.txt
-written_2/travel_guides/berlitz2/PuertoRico-History.txt
-written_2/travel_guides/berlitz2/Algarve-Intro.txt
-written_2/travel_guides/berlitz2/Nepal-History.txt
-written_2/travel_guides/berlitz2/China-History.txt
-written_2/travel_guides/berlitz2/Canada-History.txt
-written_2/travel_guides/berlitz2/Crete-History.txt
-written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt
-written_2/travel_guides/berlitz2/Bahamas-Intro.txt
-written_2/travel_guides/berlitz2/Amsterdam-History.txt
-written_2/travel_guides/berlitz2/Bahamas-WhatToDo.txt
-written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt
-written_2/travel_guides/berlitz2/Algarve-WhatToDo.txt
-written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt
-written_2/travel_guides/berlitz2/Cuba-WhereToGo.txt
-written_2/travel_guides/berlitz2/Costa-WhatToDo.txt
-written_2/travel_guides/berlitz2/Beijing-History.txt
-written_2/travel_guides/berlitz2/Nepal-WhereToGo.txt
-written_2/travel_guides/berlitz2/CanaryIslands-WhereToGo.txt
-written_2/travel_guides/berlitz2/Bermuda-history.txt
-written_2/travel_guides/berlitz2/CanaryIslands-History.txt
-written_2/travel_guides/berlitz2/Amsterdam-Intro.txt
-written_2/travel_guides/berlitz2/Crete-WhatToDo.txt
-written_2/travel_guides/berlitz2/Algarve-WhereToGo.txt
-written_2/travel_guides/berlitz2/Athens-Intro.txt
-written_2/travel_guides/berlitz2/Algarve-History.txt
-written_2/travel_guides/berlitz2/Poland-History.txt
-written_2/travel_guides/berlitz2/Beijing-WhereToGo.txt
-written_2/travel_guides/berlitz2/CanaryIslands-WhatToDo.txt
-written_2/travel_guides/berlitz2/California-WhatToDo.txt
-written_2/travel_guides/berlitz2/Budapest-History.txt
-written_2/travel_guides/berlitz2/China-WhatToDo.txt
-written_2/travel_guides/berlitz2/Athens-WhatToDo.txt
-written_2/travel_guides/berlitz2/Nepal-WhatToDo.txt
-written_2/travel_guides/berlitz2/Bermuda-WhereToGo.txt
-written_2/travel_guides/berlitz2/Paris-WhatToDo.txt
-written_2/travel_guides/berlitz2/Cuba-History.txt
-written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt
-written_2/travel_guides/berlitz2/Bahamas-History.txt
-written_2/travel_guides/berlitz2/Beijing-WhatToDo.txt
-written_2/travel_guides/berlitz2/Cancun-WhereToGo.txt
 
 find written_2/non-fiction/OUP/Castro -name "*.txt" -size -1M
 written_2/non-fiction/OUP/Castro/chR.txt
@@ -255,7 +42,7 @@ written_2/non-fiction/OUP/Castro/chO.txt
 ```
 
 -iname <br>
-This command is used to search for files with a specified name in a case insensitive manner. 
+This command is used to search for files with a specified name in a case insensitive manner. In case you named a file with both capital letters and small letters, but now you are unsure of the exact name, you can still find the file using the "-iname" command as it ignores the case while searching for the file.  
 ```
 find written_2/non-fiction/OUP/Castro -iname "cha.txt"
 written_2/non-fiction/OUP/Castro/chA.txt
@@ -265,7 +52,7 @@ written_2/travel_guides/berlitz1/HistoryDublin.txt
 ```
 
 -type <br>
-This command is used to search for files of a specific type. For example 'f' can be used to search for files, while 'd' can be used to search for directories. 
+This command is used to search for files of a specific type. For example 'f' can be used to search for files, while 'd' can be used to search for directories. In case, you are only looking for the directories in the specific location, you can use "-d", and similarly if you are only searching for files in a specific location, you can use "-f".
 ```
 find written_2 -type f -name "ch*.txt"
 written_2/non-fiction/OUP/Berk/ch2.txt
