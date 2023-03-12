@@ -1,6 +1,6 @@
 mv command 
 
-mv file1 file2 <br>
+- mv file1 file2 <br>
 This command renames file1 to file2. If file2 already exists, the command overwrites it. In this case, the original file2 is lost. This might be useful when, for example, in java
 if the file name doesnt match the class name, and you need to rename the file. In the first example below, written_2/non-fiction/OUP/Berk/chABC.txt does not exist, and the mv command renamed 
 ch2.txt in written_2/non-fiction/OUP/Berk/ to chABC.txt. In the second example, written_2/travel_guides/berlitz1/WhatToIbiza.txt already exists, and the command overwrites this file.  
@@ -16,7 +16,7 @@ ls | grep WhatToIbiza.txt
 WhatToIbiza.txt
 ```
   
-mv -i file1 file2 <br>
+- mv -i file1 file2 <br>
 This command renames file1 to file2. However, this time the command prompts the user for confirmation before overwriting the file if it exists. This is useful when you are not sure
 if file2 exists, and you dont wanna lose all contents of the file after running this command. 
 
@@ -34,7 +34,7 @@ ls written_2/travel_guides/berlitz2 | grep Algarve-Intro.txt
 Algarve-Intro.txt
 ```
   
-mv file1 directory <br>
+- mv file1 directory <br>
 This command moves file1 to directory. This command is useful when you are trying to set up a directory structure, and you realise that there is a file in the wrong directory, and you want 
 to move it.
 
@@ -47,7 +47,7 @@ mv written_2/travel_guides/berlitz1/HandRHawaii.txt written_2/travel_guides
 ls written_2/travel_guides
 HandRHawaii.txt berlitz1        berlitz2
 ```
-mv -v file1 file2 <br>
+- mv -v file1 file2 <br>
 This command renames file1 to file2. This command is useful because it lets you know which files or directories are being renamed. 
   
 ```
