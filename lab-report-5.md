@@ -46,12 +46,14 @@ Amsterdam-Intro.txt     non-fiction             travel_guides
 mv written_2/travel_guides/berlitz1/HandRHawaii.txt written_2/travel_guides
 ls written_2/travel_guides
 HandRHawaii.txt berlitz1        berlitz2
-
 ```
-mv -b <file> 
-This command creates a backup copy of <file> before moving it. This command is useful when you want to move a file to the correct directory and make changes to it, but you still want to keep
-a copy of the original file. 
+mv -v <file1> <file2> 
+This command renames file1 to file2. This command is useful because it lets you know which files or directories are being renamed. 
   
 ```
+mv -v written_2/travel_guides/berlitz1/HistoryLasVegas.txt written_2/travel_guides/berlitz1/HistoryLasVegasRenamed.txt
+written_2/travel_guides/berlitz1/HistoryLasVegas.txt -> written_2/travel_guides/berlitz1/HistoryLasVegasRenamed.txt
 
+mv -v written_2/travel_guides/berlitz2/Bahamas-history.txt written_2/travel_guides/berlitz2/Bahamas-HistoryRenamed.txt
+written_2/travel_guides/berlitz2/Bahamas-history.txt -> written_2/travel_guides/berlitz2/Bahamas-HistoryRenamed.txt
 ```
