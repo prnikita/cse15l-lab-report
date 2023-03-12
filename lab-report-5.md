@@ -34,7 +34,7 @@ ls written_2/travel_guides/berlitz2 | grep Algarve-Intro.txt
 Algarve-Intro.txt
 ```
   
-mv <file1> <directory> <br>
+3. mv <file1> <directory> <br>
 This command moves <file1> to <directory>. This command is useful when you are trying to set up a directory structure, and you realise that there is a file in the wrong directory, and you want 
 to move it.
 
@@ -47,7 +47,7 @@ mv written_2/travel_guides/berlitz1/HandRHawaii.txt written_2/travel_guides
 ls written_2/travel_guides
 HandRHawaii.txt berlitz1        berlitz2
 ```
-mv -v <file1> <file2> <br>
+4. mv -v <file1> <file2> <br>
 This command renames file1 to file2. This command is useful because it lets you know which files or directories are being renamed. 
   
 ```
