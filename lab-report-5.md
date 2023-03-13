@@ -1,6 +1,6 @@
 mv command 
 
-- mv /<file1/> file2 <br>
+- mv file1 file2 <br>
 This command renames file1 to file2. If file2 already exists, the command overwrites it. In this case, the original file2 is lost. This might be useful when, for example, in java
 if the file name doesnt match the class name, and you need to rename the file. In the first example below, written_2/non-fiction/OUP/Berk/chABC.txt does not exist, and the mv command renamed 
 ch2.txt in written_2/non-fiction/OUP/Berk/ to chABC.txt. In the second example, written_2/travel_guides/berlitz1/WhatToIbiza.txt already exists, and the command overwrites this file.  
