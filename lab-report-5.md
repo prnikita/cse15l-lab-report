@@ -57,3 +57,5 @@ written_2/travel_guides/berlitz1/HistoryLasVegas.txt -> written_2/travel_guides/
 mv -v written_2/travel_guides/berlitz2/Bahamas-history.txt written_2/travel_guides/berlitz2/Bahamas-HistoryRenamed.txt
 written_2/travel_guides/berlitz2/Bahamas-history.txt -> written_2/travel_guides/berlitz2/Bahamas-HistoryRenamed.txt
 ```
+Sources
+I used the "man" command on the terminal to find command-line options for the mv command. In addition, I used chat gpt to understand how the command-line option works, what it does, and the specific way that it can be used. For example, I typed "man mv" on the terminal to get the different command-line options for the find command. On chatgpt, I typed "What does the mv -v command do" and then "can you give me some examples of its usage". I followed a similar process for all the commands mentioned above.
